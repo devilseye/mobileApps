@@ -1,0 +1,212 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:clickable="true">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#282828"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newNoteText"
+                        android:layout_alignParentEnd="false"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/pencilImg"
+                        android:hint="@string/newNote"
+                        android:autoText="false"
+                        android:layout_alignTop="@+id/pencilImg"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textColorHighlight="#999999" />
+
+                    <ImageView
+                        android:layout_width="@android:dimen/app_icon_size"
+                        android:layout_height="@android:dimen/app_icon_size"
+                        android:id="@+id/pencilImg"
+                        android:src="@android:drawable/ic_menu_edit"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addSomeNotesText"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/addNotesHere"
+                        android:layout_below="@+id/pencilImg"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:textColorHighlight="#999999"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="#282828"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/app_icon_size"
+                        android:layout_height="@android:dimen/app_icon_size"
+                        android:id="@+id/newsShareImg"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@android:drawable/ic_menu_share"
+                        android:clickable="true"
+                        android:onClick="shareButton_Click" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/newsHead"
+                        android:id="@+id/newsHeadText"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignBottom="@+id/newsShareImg"
+                        android:layout_toStartOf="@+id/newsShareImg"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/newsBody"
+                        android:id="@+id/newsBodyText"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/newsShareImg"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/closingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="#282828"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <ImageView
+                        android:layout_width="@android:dimen/app_icon_size"
+                        android:layout_height="@android:dimen/app_icon_size"
+                        android:id="@+id/advCloseImg"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:clickable="true"
+                        android:onClick="closeButton_Click" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/advHead"
+                        android:id="@+id/advHeadText"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignBottom="@+id/advCloseImg"
+                        android:layout_toStartOf="@+id/advCloseImg"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="0dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/advBody"
+                        android:id="@+id/advBodyText"
+                        android:layout_below="@+id/advCloseImg"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentEnd="false"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/advButtonText"
+                        android:id="@+id/buyButton"
+                        android:onClick="buyButton_Click"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         If you're not building against API 17 or higher, use
+         android:layout_gravity="left" instead. -->
+    <!-- The drawer is given a fixed width in dp and extends the full height of
+         the container. -->
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width" android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="devilseye.android.firstlab.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

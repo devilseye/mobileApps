@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/pref_cat_general">
+        <EditTextPreference
+            android:name="@string/pref_username_title"
+            android:title="@string/pref_username_title"
+            android:summary=""
+            android:key="usernamePref" />
+        <RingtonePreference
+            android:name="@string/pref_sound_title"
+            android:title="@string/pref_sound_title"
+            android:summary="@string/pref_sound_summary"
+            android:key="soundPref" />
+        <SwitchPreference
+            android:name="@string/pref_notifications_title"
+            android:title="@string/pref_notifications_title"
+            android:defaultValue="false"
+            android:key="notificationsPref" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:name="@string/pref_color_title"
+            android:title="@string/pref_color_title"
+            android:key="colorPref"
+            android:defaultValue="0xffffca35"
+            app:supportsAlpha="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_cat_adv">
+        <SwitchPreference
+            android:name="@string/pref_instantBuy_title"
+            android:title="@string/pref_instantBuy_title"
+            android:defaultValue="false"
+            android:key="instantBuyPref" />
+        <Preference
+            android:name="@string/pref_today_title"
+            android:title="@string/pref_today_title"
+            android:key="datePref"
+            android:summary="@string/pref_today_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

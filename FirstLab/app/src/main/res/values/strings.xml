@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Notes</string>
+
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="ok">OK</string>
+
+    <string name="newNote">New note</string>
+    <string name="addNotesHere">Add some notes here</string>
+    <string name="newsHead">Some cool news everyone!</string>
+    <string name="newsBody">Development of this software product is in progress!\nCongratulations!\nSome cool things are coming soon!</string>
+    <string name="advHead">Some annoying advertisement</string>
+    <string name="advBody">Do you want to buy our product?\nClick this button:</string>
+    <string name="advButtonText">Buy me, please!</string>
+
+    <string name="buyToastText">OK! Just give me a pizza!</string>
+
+    <string name="exitHead">Exit confirmation</string>
+    <string name="exitBody">Are you sure you want to exit?</string>
+
+    <string name="confHead">Confirmation</string>
+    <string name="confBody">Are you sure?</string>
+
+    <string name="aboutHead">About</string>
+    <string name="aboutBody">Laboratory work #1\nAuthor: Damir Nashirvanov\nGroup: 6122M\nUniversity: SSAU</string>
+
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="username">User name</string>
+
+    <string name="action_bio">BIO</string>
+    <string name="action_tags">Tags</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_alarms">Alarms</string>
+    <string name="action_about">About</string>
+    <string name="action_buy">Buy</string>
+    <string name="action_exit">Exit</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_cat_general">General</string>
+    <string name="pref_username_title">Username</string>
+    <string name="pref_username_summary">Enter your name here, please</string>
+    <string name="pref_sound_title">Sound</string>
+    <string name="pref_sound_summary">Default sound la la la</string>
+    <string name="pref_notifications_title">Notifications</string>
+    <string name="pref_notifications_summary"></string>
+    <string name="pref_color_title">Color</string>
+    <string name="pref_color_summary"></string>
+
+    <string name="pref_cat_adv">Advertisement</string>
+    <string name="pref_instantBuy_title">Instant buy</string>
+    <string name="pref_instantBuy_summary"></string>
+    <string name="pref_today_title">Today</string>
+    <string name="pref_today_summary"></string>
+
+    <string name="alarm_1_time">06:00</string>
+    <string name="alarm_1_message">Арбайтен!</string>
+    <string name="alarm_1_days">Будние дни</string>
+
+    <string name="alarm_2_time">10:00</string>
+    <string name="alarm_2_message"></string>
+    <string name="alarm_2_days">Выходные дни</string>
+
+    <string name="alarm_3_time">18:30</string>
+    <string name="alarm_3_message">Тренировка</string>
+    <string name="alarm_3_days">Вт, Чт, Сб</string>
+
+    <string name="title_activity_alarm">Alarms</string>
+</resources>

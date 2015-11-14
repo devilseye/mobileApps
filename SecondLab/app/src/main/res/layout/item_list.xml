@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textSize="36px"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="filename"
+        android:textSize="28px"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/contact"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>

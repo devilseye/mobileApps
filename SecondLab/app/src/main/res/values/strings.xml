@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Files to Send</string>
+
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="ok">OK</string>
+
+    <string name="deleted">Deleted file for</string>
+
+    <string name="action_addNew">Add new item</string>
+    <string name="action_about">About</string>
+    <string name="action_exit">Exit</string>
+
+    <string name="exitHead">Exit confirmation</string>
+    <string name="exitBody">Are you sure you want to exit?</string>
+
+    <string name="aboutHead">About</string>
+    <string name="aboutBody">Laboratory work #2\nAuthor: Damir Nashirvanov\nGroup: 6122M\nUniversity: SSAU</string>
+
+    <string name="selectHead">Choose file source:</string>
+    <string name="selectFile">File Manager</string>
+    <string name="selectDictaphone">Dictaphone</string>
+
+    <string name="chooser_title">Choose FileManager</string>
+
+    <string name="errorNoApp">Sorry, but no suitable application is not found.</string>
+
+</resources>
